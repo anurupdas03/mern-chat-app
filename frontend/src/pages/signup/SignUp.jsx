@@ -25,10 +25,10 @@ const SignUp = () => {
             bg-opacity-0'>
                 <h1 className='text-3xl font-semibold text-center text-gray-300'>
                     Sign Up
-                    <span className='text-white'> Chat App</span>
+                    {/* <span className='text-white'> Chat App</span> */}
                 </h1>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='pt-4'>
                     <div>
                         <label className='label p-2'>
                             <span className='text-base label-text'>Full Name</span>
@@ -72,7 +72,7 @@ const SignUp = () => {
                     <Link to={'/login'} className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
                         Already have an account?
                     </Link>
-                    <div>
+                    <div className='pt-2'>
                         <button className='btn btn-block btn-sm mt-2' disabled={loading}>
                             {loading ? (
                                 <span className='loading loading-spinner'></span>

@@ -18,8 +18,8 @@ const Login = () => {
             <div className='w-full p-6 rounded-lg shadow-md bg-clip-padding backdrop-filter backdrop-blur-lg
             bg-opacity-0'>
                 <h1 className='text-3xl font-semibold text-center text-gray-300'>
-                    Hello
-                    <span className='text-white'> Chat App</span>
+                    Login
+                    {/* <span className='text-white'> Chat App</span> */}
                 </h1>
 
                 <form onSubmit={handleSubmit}>

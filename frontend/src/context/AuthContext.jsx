@@ -9,6 +9,7 @@ export const useAuthContext = () => {
 }
 
 export const AuthContextProvider = ({ children }) => {
+    //console.log("Auth Context Provider mounted")
     // @ts-ignore
     const [authUser, setAuthUser] = useState(JSON.parse(localStorage.getItem("chat-user")) || null)
     // @ts-ignore

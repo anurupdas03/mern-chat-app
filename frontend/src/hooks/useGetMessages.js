@@ -21,7 +21,10 @@ const useGetMessages = () => {
                 setLoading(false);
             }
         }
-        if (selectedConversation?._id) getMessages()
+        //run getMessages only when a chat is selected
+        if (selectedConversation?._id) {
+            getMessages()
+        }
     }, [selectedConversation?._id, setMessages])
 
     return { loading, messages };
