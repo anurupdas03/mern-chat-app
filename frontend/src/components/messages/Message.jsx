@@ -14,6 +14,7 @@ const Message = ({ message }) => {
     const formattedTime = extractTime(message.createdAt);
 
     return (
+
         <div className={`chat ${chatClassName}`}>
             <div className="chat-image avatar">
                 <div className="w-10 rounded-full">
